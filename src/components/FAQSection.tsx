@@ -23,8 +23,8 @@ const faqs = [
     answer: "Twhisper supports email, casual messages, code documentation, and professional content formatting. Premium users can create custom formatting templates for specialized use cases."
   },
   {
-    question: "Is my voice data secure?",
-    answer: "Absolutely. Google OAuth is used solely for secure login authentication and does not access or handle your voice data. Your audio files are processed with end-to-end encryption, temporarily processed through Azure OpenAI, and immediately deleted. Your conversations remain completely private."
+    question: "How does authentication work?",
+    answer: "Twhisper uses Google OAuth for secure user authentication and account management. This handles login/logout functionality and user identification only."
   },
   {
     question: "How does the streaming mode work?",

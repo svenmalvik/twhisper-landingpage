@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Zap, Brain, Terminal, Shield } from "lucide-react";
+import { Zap, Brain, Terminal } from "lucide-react";
 
 const features = [
   {
@@ -19,12 +19,6 @@ const features = [
     title: "Terminal-Native",
     description: "Built for developers, works where you work", 
     details: "Seamless integration with your workflow"
-  },
-  {
-    icon: Shield,
-    title: "Enterprise Security",
-    description: "Secure authentication with voice data protection",
-    details: "Google OAuth for login only - your voice data stays private"
   }
 ];
 
@@ -44,7 +38,7 @@ export const FeatureCards = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <Card 
               key={index} 

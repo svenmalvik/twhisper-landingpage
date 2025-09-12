@@ -23,8 +23,8 @@ const features = [
   {
     icon: Shield,
     title: "Enterprise Security",
-    description: "Google OAuth with end-to-end encryption",
-    details: "Your voice data remains private and secure"
+    description: "Secure authentication with voice data protection",
+    details: "Google OAuth for login only - your voice data stays private"
   }
 ];
 

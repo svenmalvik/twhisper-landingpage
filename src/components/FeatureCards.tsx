@@ -24,37 +24,40 @@ const features = [
 
 export const FeatureCards = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4 font-mono">
+            <span className="text-terminal-accent"># </span>
             Why Choose{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Twhisper
-            </span>
+            <span className="text-terminal-accent">Twhisper</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-mono">
+            <span className="text-terminal-muted">// </span>
             Powered by cutting-edge AI technology, designed for modern workflows
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card 
+            <div 
               key={index} 
-              className="bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105 group"
+              className="bg-gradient-card border border-border rounded-lg shadow-soft hover:shadow-terminal transition-all duration-300 hover:scale-105 group p-6"
             >
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <feature.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <CardTitle className="text-xl">{feature.title}</CardTitle>
-                <CardDescription className="text-base">{feature.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-sm text-muted-foreground">{feature.details}</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-xl font-semibold font-mono">{feature.title}</h3>
+                <p className="text-base text-muted-foreground font-mono mt-2">{feature.description}</p>
+              </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground font-mono">
+                  <span className="text-terminal-muted">// </span>
+                  {feature.details}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

@@ -62,16 +62,28 @@ export default {
           accent: "hsl(var(--hero-accent))",
           secondary: "hsl(var(--hero-secondary))",
         },
+        terminal: {
+          bg: "hsl(15 15 17%)",
+          text: "hsl(210 40% 98%)",
+          accent: "hsl(180 83% 59%)",
+          success: "hsl(140 83% 59%)",
+          muted: "hsl(215 20% 65%)",
+        },
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
+        'gradient-terminal': 'var(--gradient-terminal)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'medium': 'var(--shadow-medium)',
         'large': 'var(--shadow-large)',
+        'terminal': 'var(--shadow-terminal)',
+      },
+      fontFamily: {
+        mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'monospace'],
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',

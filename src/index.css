@@ -8,48 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 15 15 17%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 25 25 27%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 25 25 27%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 245 58% 51%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 180 83% 59%;
+    --primary-foreground: 15 15 17%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 40 40 42%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 40 42%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 274 83% 59%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 140 83% 59%;
+    --accent-foreground: 15 15 17%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 245 58% 51%;
+    --border: 40 40 42%;
+    --input: 40 40 42%;
+    --ring: 180 83% 59%;
 
     --radius: 0.75rem;
 
     /* Custom design system tokens */
-    --hero-bg: 245 25% 97%;
-    --hero-accent: 245 58% 51%;
-    --hero-secondary: 274 83% 59%;
+    --hero-bg: 15 15 17;
+    --hero-accent: 180 83% 59%;
+    --hero-secondary: 140 83% 59%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(245 58% 51%), hsl(274 83% 59%));
-    --gradient-hero: linear-gradient(135deg, hsl(245 25% 97%), hsl(245 15% 95%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(245 15% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(180 83% 59%), hsl(140 83% 59%));
+    --gradient-hero: linear-gradient(135deg, hsl(15 15 17%), hsl(20 20 22%));
+    --gradient-card: linear-gradient(145deg, hsl(25 25 27%), hsl(20 20 22%));
+    --gradient-terminal: linear-gradient(180deg, hsl(15 15 17%), hsl(10 10 12%));
     
-    --shadow-soft: 0 4px 6px -1px hsl(245 58% 51% / 0.1), 0 2px 4px -1px hsl(245 58% 51% / 0.06);
-    --shadow-medium: 0 10px 15px -3px hsl(245 58% 51% / 0.1), 0 4px 6px -2px hsl(245 58% 51% / 0.05);
-    --shadow-large: 0 25px 50px -12px hsl(245 58% 51% / 0.25);
+    --shadow-soft: 0 4px 6px -1px hsl(180 83% 59% / 0.1), 0 2px 4px -1px hsl(180 83% 59% / 0.06);
+    --shadow-medium: 0 10px 15px -3px hsl(180 83% 59% / 0.1), 0 4px 6px -2px hsl(180 83% 59% / 0.05);
+    --shadow-large: 0 25px 50px -12px hsl(180 83% 59% / 0.25);
+    --shadow-terminal: 0 0 20px hsl(180 83% 59% / 0.3), inset 0 0 20px hsl(0 0% 0% / 0.5);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -72,33 +74,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 15 15 17%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 25 25 27%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 25 25 27%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 180 83% 59%;
+    --primary-foreground: 15 15 17%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 40 40 42%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 40 40 42%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 140 83% 59%;
+    --accent-foreground: 15 15 17%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 40 40 42%;
+    --input: 40 40 42%;
+    --ring: 180 83% 59%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

@@ -55,6 +55,12 @@ All colors MUST be HSL.
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Terminal theme colors */
+    --terminal-bg: 15 15 17%;
+    --terminal-text: 210 40% 98%;
+    --terminal-accent: 180 83% 59%;
+    --terminal-success: 140 83% 59%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -119,5 +125,63 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Terminal theme utility classes */
+  .bg-terminal-bg {
+    background-color: hsl(var(--terminal-bg));
+  }
+  .text-terminal-text {
+    color: hsl(var(--terminal-text));
+  }
+  .text-terminal-accent {
+    color: hsl(var(--terminal-accent));
+  }
+  .text-terminal-success {
+    color: hsl(var(--terminal-success));
+  }
+  .border-terminal-accent {
+    border-color: hsl(var(--terminal-accent));
+  }
+  .border-terminal-success {
+    border-color: hsl(var(--terminal-success));
+  }
+  .bg-terminal-success {
+    background-color: hsl(var(--terminal-success));
+  }
+  .hover\:bg-terminal-success\/80:hover {
+    background-color: hsl(var(--terminal-success) / 0.8);
+  }
+  .hover\:bg-terminal-accent\/10:hover {
+    background-color: hsl(var(--terminal-accent) / 0.1);
+  }
+  .bg-terminal-success\/20 {
+    background-color: hsl(var(--terminal-success) / 0.2);
+  }
+  .bg-terminal-bg\/50 {
+    background-color: hsl(var(--terminal-bg) / 0.5);
+  }
+  .bg-terminal-bg\/70 {
+    background-color: hsl(var(--terminal-bg) / 0.7);
+  }
+  .bg-terminal-bg\/90 {
+    background-color: hsl(var(--terminal-bg) / 0.9);
+  }
+  .text-terminal-text\/60 {
+    color: hsl(var(--terminal-text) / 0.6);
+  }
+  .text-terminal-text\/70 {
+    color: hsl(var(--terminal-text) / 0.7);
+  }
+  .text-terminal-text\/80 {
+    color: hsl(var(--terminal-text) / 0.8);
+  }
+  .border-terminal-accent\/20 {
+    border-color: hsl(var(--terminal-accent) / 0.2);
+  }
+  .border-terminal-accent\/30 {
+    border-color: hsl(var(--terminal-accent) / 0.3);
   }
 }

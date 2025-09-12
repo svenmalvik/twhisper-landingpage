@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, X, Star } from "lucide-react";
+import { StripePaymentButton } from "./StripePaymentButton";
 
 const plans = [
   {
@@ -42,7 +42,7 @@ const plans = [
 
 export const PricingSection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section id="pricing" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
@@ -96,13 +96,14 @@ export const PricingSection = () => {
                   ))}
                 </ul>
 
-                <Button 
-                  className="w-full" 
+                <StripePaymentButton
+                  plan={plan.name.toLowerCase() as 'free' | 'premium'}
+                  className="w-full"
                   variant={plan.popular ? "default" : "outline"}
                   size="lg"
                 >
                   {plan.cta}
-                </Button>
+                </StripePaymentButton>
               </CardContent>
             </Card>
           ))}

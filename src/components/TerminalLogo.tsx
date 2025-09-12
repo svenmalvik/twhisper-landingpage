@@ -11,7 +11,7 @@ export const TerminalLogo = () => {
         <span className="inline-block border-2 border-terminal-accent border-l-0 px-2 py-1">E</span>
         <span className="inline-block border-2 border-terminal-accent border-l-0 px-2 py-1">R</span>
       </div>
-      <p className="text-terminal-muted font-mono text-sm mt-2">Terminal Whisper CLI</p>
+      <p className="text-terminal-text font-mono text-sm mt-2">Terminal Whisper CLI</p>
     </div>
   );
 };

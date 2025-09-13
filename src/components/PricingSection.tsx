@@ -10,12 +10,11 @@ const plans = [
     period: "/month",
     description: "Perfect for testing and short messages",
     features: [
-      { name: "Up to 1 minute per session", included: true },
+      { name: "1-minute recordings (batch mode)", included: true },
       { name: "All formatting modes", included: true },
-      { name: "Batch mode only", included: true },
-      { name: "Community support", included: true },
-      { name: "Streaming mode", included: false },
-      { name: "Custom formatting templates", included: false },
+      { name: "Full AI transcription", included: true },
+      { name: "Streaming for long sessions", included: false },
+      { name: "10-minute recordings (batch mode)", included: false },
       { name: "Priority support", included: false },
     ],
     cta: "Start Free",
@@ -23,19 +22,19 @@ const plans = [
   },
   {
     name: "Premium",
-    price: "€9",
+    price: "€1",
+    originalPrice: "€9",
     period: "/month",
     description: "For professional content creation and long-form work",
     features: [
-      { name: "Up to 60 minutes per session", included: true },
+      { name: "Streaming for long sessions", included: true },
+      { name: "10-minute recordings (batch mode)", included: true },
       { name: "All formatting modes", included: true },
-      { name: "Real-time streaming mode", included: true },
-      { name: "Custom formatting templates", included: true },
-      { name: "Priority customer support", included: true },
-      { name: "Revision history", included: true },
-      { name: "Secure backup", included: true },
+      { name: "Full AI transcription", included: true },
+      { name: "Priority support", included: true },
+      { name: "Supports ongoing development", included: true },
     ],
-    cta: "Upgrade to Premium",
+    cta: "Install to Upgrade",
     popular: true
   }
 ];
@@ -74,9 +73,17 @@ export const PricingSection = () => {
               <CardHeader className="text-center pb-8">
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <div className="flex items-baseline justify-center gap-1 mt-4">
+                  {plan.originalPrice && (
+                    <span className="text-2xl text-muted-foreground line-through mr-2">{plan.originalPrice}</span>
+                  )}
                   <span className="text-5xl font-bold">{plan.price}</span>
                   <span className="text-lg text-muted-foreground">{plan.period}</span>
                 </div>
+                {plan.originalPrice && (
+                  <div className="text-sm text-terminal-success font-semibold mt-2">
+                    Early access pricing
+                  </div>
+                )}
                 <CardDescription className="text-base mt-2">{plan.description}</CardDescription>
               </CardHeader>
 
@@ -111,7 +118,7 @@ export const PricingSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground">
-            All plans include secure processing, data encryption, and regular updates.
+            All plans include local AI processing and smart formatting for multiple contexts.
           </p>
         </div>
       </div>

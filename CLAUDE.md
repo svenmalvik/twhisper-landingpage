@@ -77,9 +77,41 @@ All content is currently hardcoded in components. When updating:
 - **Pricing**: `src/components/PricingSection.tsx`
 - **FAQ**: `src/components/FAQSection.tsx`
 
+## Product Information
+
+This landing page promotes **twhisper**, a terminal-based voice-to-text transcription tool with AI-powered features:
+
+### What twhisper Does
+- **Voice-to-Text Transcription**: Transforms speech into formatted text using AI
+- **Smart Recording**: Records audio with spacebar press
+- **Intelligent Formatting**: Multiple formatting modes (default, email, code, message, slack, professional casual)
+- **Local & Cloud Processing**: Supports local whisper.cpp and Azure OpenAI Whisper
+
+### Core Features
+- 🎤 Voice Recording with keyboard controls
+- 🤖 AI Transcription (local whisper.cpp by default) 
+- ✨ Smart Text Formatting for different contexts
+- 📋 Automatic Clipboard Copy
+- ⌨️ Intuitive Keyboard Controls
+
+### Pricing Structure
+**Free Plan**: 1-minute recordings, all formatting modes, full AI transcription
+**Premium Plan**: 10-minute recordings, real-time streaming, priority support
+
+### Technical Details
+- **Primary Platform**: macOS (Homebrew installation)
+- **Requirements**: Azure OpenAI Account (optional Azure OpenAI Whisper Deployment)
+- **Installation**: `brew tap svenmalvik/twhisper && brew install twhisper`
+
+### Target Use Cases
+- Email drafting with appropriate formatting
+- Code documentation and comments
+- Professional messaging (Slack, Teams)
+- General transcription with context-aware formatting
+
 ## Important Notes
 
 - **No Testing Framework**: Tests should be added before major changes
 - **Static Site**: No backend integration or dynamic data
-- **Terminal Theme**: Maintain consistency with dark terminal aesthetic
+- **Terminal Theme**: Maintain consistency with dark terminal aesthetic (matches twhisper's terminal nature)
 - **Performance**: Large shadcn/ui bundle - consider tree-shaking for production optimization

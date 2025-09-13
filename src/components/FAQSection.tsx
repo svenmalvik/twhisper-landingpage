@@ -8,35 +8,35 @@ import {
 const faqs = [
   {
     question: "How accurate is the transcription?",
-    answer: "Powered by Azure OpenAI Whisper, Twhisper delivers industry-leading accuracy with intelligent formatting. Our AI understands context, technical terminology, and proper nouns for superior results."
+    answer: "Twhisper uses local whisper.cpp by default for high-quality transcription, with optional Azure OpenAI Whisper for enhanced accuracy. The AI understands context and applies intelligent formatting for superior results."
   },
   {
     question: "Do I need internet connection?",
-    answer: "Yes, Twhisper uses cloud-based AI for the highest quality transcription and formatting. This ensures you get the most accurate results with the latest AI improvements."
+    answer: "Basic transcription works locally with whisper.cpp. However, Azure OpenAI account is currently required for this early version, and enhanced features may need internet connection."
   },
   {
     question: "Can I cancel anytime?",
-    answer: "Absolutely. No contracts, cancel your subscription at any time through your account portal. You'll retain access to premium features until the end of your billing period."
+    answer: "Absolutely. No contracts, cancel your subscription at any time. You'll retain access to premium features until the end of your billing period."
   },
   {
-    question: "What formats does it support?",
-    answer: "Twhisper supports email, casual messages, code documentation, and professional content formatting. Premium users can create custom formatting templates for specialized use cases."
+    question: "What formatting modes are available?",
+    answer: "Twhisper supports multiple formatting modes: default, email, code documentation, message, slack, professional casual. All modes are available in both free and premium plans."
   },
   {
-    question: "How does authentication work?",
-    answer: "Twhisper uses Google OAuth for secure user authentication and account management. This handles login/logout functionality and user identification only."
+    question: "What platforms are supported?",
+    answer: "Currently, twhisper is designed for macOS and requires Homebrew for installation. We're exploring support for other platforms in future releases."
   },
   {
     question: "How does the streaming mode work?",
-    answer: "Premium streaming mode provides real-time transcription as you speak, with formatting applied at completion. It's perfect for capturing ideas during meetings or brainstorming sessions."
+    answer: "Premium streaming mode provides real-time transcription as you speak, perfect for long meetings and extended sessions. It's ideal for capturing live conversations and brainstorming sessions."
   },
   {
     question: "Can I use it offline?",
-    answer: "Twhisper requires internet connection for the best quality transcription. However, we're exploring local processing options for basic functionality in future updates."
+    answer: "Yes! Twhisper uses local whisper.cpp processing by default, so basic transcription works offline. Enhanced features with Azure OpenAI require internet connection."
   },
   {
     question: "What's the difference between batch and streaming mode?",
-    answer: "Batch mode processes complete recordings up to 60 minutes (Premium) or 1 minute (Free). Streaming mode provides real-time transcription for immediate feedback and live use cases."
+    answer: "Batch mode processes complete recordings up to 10 minutes (Premium) or 1 minute (Free). Streaming mode provides real-time transcription for longer sessions and immediate feedback."
   }
 ];
 

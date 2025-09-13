@@ -30,9 +30,14 @@ export const HeroSectionTerminal = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="terminal" size="xl" className="font-mono group">
+              <Button 
+                variant="terminal" 
+                size="xl" 
+                className="font-mono group"
+                onClick={() => document.getElementById('installation')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <Terminal className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                $ twhisper --start
+                Get Started
               </Button>
               <Button variant="outline" size="xl" className="font-mono">
                 man twhisper

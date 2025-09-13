@@ -25,13 +25,23 @@ export const CTASection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="xl" className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+              <Button 
+                variant="secondary" 
+                size="xl" 
+                className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                onClick={() => document.getElementById('installation')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <Mic className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 Start Free Trial
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
-              <Button variant="outline" size="xl" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button 
+                variant="outline" 
+                size="xl" 
+                className="border-2 border-primary-foreground text-primary-foreground bg-transparent hover:bg-primary-foreground/20 font-semibold"
+                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 View Pricing
               </Button>
             </div>

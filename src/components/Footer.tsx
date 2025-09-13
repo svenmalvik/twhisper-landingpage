@@ -28,7 +28,7 @@ export const Footer = () => {
                 <Mail className="w-5 h-5" />
               </a>
               <a 
-                href="https://github.com/svenmalvik/twhisper" 
+                href="https://github.com/svenmalvik/homebrew-twhisper" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -68,7 +68,7 @@ export const Footer = () => {
               <li><Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link></li>
               <li><a href="mailto:sven@malvik.de" className="text-muted-foreground hover:text-primary transition-colors">Contact Support</a></li>
-              <li><a href="https://github.com/svenmalvik/twhisper/blob/main/README.md" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Documentation</a></li>
+              <li><a href="https://github.com/svenmalvik/homebrew-twhisper/blob/main/README.md" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Documentation</a></li>
             </ul>
           </div>
         </div>

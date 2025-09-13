@@ -43,7 +43,7 @@ export const HeroSectionTerminal = () => {
                 variant="outline" 
                 size="xl" 
                 className="font-mono hover:bg-white/10 hover:border-white/30 hover:text-white transition-colors"
-                onClick={() => window.open('https://github.com/svenmalvik/twhisper/blob/main/README.md', '_blank')}
+                onClick={() => window.open('https://github.com/svenmalvik/homebrew-twhisper/blob/main/README.md', '_blank')}
               >
                 man twhisper
               </Button>

@@ -22,7 +22,7 @@ const plans = [
   },
   {
     name: "Premium",
-    price: "€1",
+    price: "€0",
     originalPrice: "€9",
     period: "/month",
     description: "For professional content creation and long-form work",
@@ -81,7 +81,7 @@ export const PricingSection = () => {
                 </div>
                 {plan.originalPrice && (
                   <div className="text-sm text-terminal-success font-semibold mt-2">
-                    Early access pricing
+                    Free during early access
                   </div>
                 )}
                 <CardDescription className="text-base mt-2">{plan.description}</CardDescription>

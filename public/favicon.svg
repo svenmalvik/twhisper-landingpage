@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#000"/>
+  <!-- Terminal window border -->
+  <rect x="2" y="2" width="28" height="28" stroke="#50e6d8" stroke-width="4" fill="none"/>
+  <!-- Large T -->
+  <text x="16" y="22" text-anchor="middle" fill="#50e6d8" font-family="monospace" font-size="16" font-weight="bold">T</text>
+</svg>

@@ -26,7 +26,7 @@ export const StripePaymentButton: React.FC<StripePaymentButtonProps> = ({
 
   return (
     <Button 
-      className={className}
+      className={`${className} ${plan === 'free' ? 'hover:bg-muted/50 hover:text-white transition-colors' : ''}`}
       variant={variant}
       size={size}
       onClick={handlePayment}

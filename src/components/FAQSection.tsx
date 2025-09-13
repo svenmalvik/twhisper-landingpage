@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: "What's the difference between batch and streaming mode?",
-    answer: "Batch mode processes complete recordings up to 10 minutes (Premium) or 1 minute (Free). Streaming mode provides real-time transcription for longer sessions and immediate feedback."
+    answer: "Batch mode processes complete recordings up to 10 minutes (Premium) or 1 minute (Free). Streaming mode provides real-time transcription for longer sessions."
   }
 ];
 

@@ -75,7 +75,7 @@ export const InstallationSection = () => {
                   <Button
                     size="sm"
                     variant="ghost"
-                    className="absolute top-2 right-2 h-8 w-8 p-0"
+                    className="absolute top-2 right-2 h-8 w-8 p-0 hover:bg-terminal-accent/10 hover:text-terminal-accent transition-colors"
                     onClick={() => copyToClipboard(step.command, index)}
                   >
                     {copiedStep === index ? (

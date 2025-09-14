@@ -33,7 +33,7 @@ const plans = [
       { name: "Streaming for long sessions", included: true },
       { name: "10-minute recordings (batch mode)", included: true },
       { name: "All tone of voice modes", included: true },
-      { name: "Priority support", included: true },
+      { name: "Support", included: true },
       { name: "Custom tone profiles", included: false },
       { name: "Managed cloud AI (no setup required)", included: false },
       { name: "Single sign-on (SSO)", included: false },

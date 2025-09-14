@@ -19,14 +19,19 @@ export const StripePaymentButton: React.FC<StripePaymentButtonProps> = ({
   const [isLoading, setIsLoading] = useState(false);
 
   const handlePayment = async () => {
-    // Both free and premium plans scroll to installation
-    // Premium users will upgrade from within the app after installing
-    document.getElementById('installation')?.scrollIntoView({ behavior: 'smooth' });
+    if (plan === 'enterprise') {
+      // Open email client for Enterprise contact
+      window.location.href = 'mailto:sven@malvik.de?subject=Enterprise Plan Inquiry&body=Hi Sven,%0A%0AI\'m interested in learning more about the Enterprise plan for twhisper.%0A%0AThanks!';
+    } else {
+      // Both starter and professional plans scroll to installation
+      // Professional users will upgrade from within the app after installing
+      document.getElementById('installation')?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
     <Button 
-      className={`${className} ${plan === 'starter' ? 'hover:bg-muted/50 hover:text-white transition-colors' : ''}`}
+      className={`${className} ${(plan === 'starter' || plan === 'enterprise') ? 'hover:bg-muted/50 hover:text-white transition-colors' : ''}`}
       variant={variant}
       size={size}
       onClick={handlePayment}

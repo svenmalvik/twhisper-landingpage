@@ -11,10 +11,10 @@ const plans = [
     description: "Perfect for testing and short messages",
     features: [
       { name: "1-minute recordings (batch mode)", included: true },
-      { name: "All formatting modes", included: true },
+      { name: "All tone of voice modes", included: true },
       { name: "No login required", included: true },
       { name: "Streaming for long sessions", included: false },
-      { name: "Custom formatting options", included: false },
+      { name: "Custom tone profiles", included: false },
       { name: "10-minute recordings (batch mode)", included: false },
       { name: "Priority support", included: false },
       { name: "Managed cloud AI (no setup required)", included: false },
@@ -32,10 +32,10 @@ const plans = [
     features: [
       { name: "Streaming for long sessions", included: true },
       { name: "10-minute recordings (batch mode)", included: true },
-      { name: "All formatting modes", included: true },
-      { name: "Streaming formatting modes", included: true },
+      { name: "All tone of voice modes", included: true },
+      { name: "Real-time tone of voice adaptation", included: true },
       { name: "Priority support", included: true },
-      { name: "Custom formatting options", included: false },
+      { name: "Custom tone profiles", included: false },
       { name: "Managed cloud AI (no setup required)", included: false },
       { name: "Single sign-on (SSO)", included: false },
     ],
@@ -51,14 +51,14 @@ const plans = [
     features: [
       { name: "Streaming for long sessions", included: true },
       { name: "10-minute recordings (batch mode)", included: true },
-      { name: "All formatting modes", included: true },
-      { name: "Streaming formatting modes", included: true },
-      { name: "Custom formatting options", included: true },
+      { name: "All tone of voice modes", included: true },
+      { name: "Real-time tone of voice adaptation", included: true },
+      { name: "Custom tone profiles", included: true },
       { name: "Priority support", included: true },
       { name: "Managed cloud AI (no setup required)", included: true },
       { name: "Single sign-on (SSO)", included: true },
     ],
-    cta: "Notify Me",
+    cta: "Contact Us",
     popular: false
   }
 ];
@@ -142,7 +142,7 @@ export const PricingSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground">
-            All plans include local AI processing and smart formatting for multiple contexts.
+            All plans include local AI processing and intelligent tone of voice adaptation for multiple contexts.
           </p>
         </div>
       </div>

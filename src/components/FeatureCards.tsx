@@ -11,7 +11,7 @@ const features = [
   {
     icon: Brain,
     title: "AI-Powered Intelligence", 
-    description: "Context-aware formatting for emails, code docs, and more",
+    description: "Smart tone of voice adaptation for emails, code docs, and more",
     details: "Understands your intent, not just your words"
   },
   {

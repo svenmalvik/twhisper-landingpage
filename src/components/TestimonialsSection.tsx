@@ -6,14 +6,14 @@ const testimonials = [
     name: "Ingrid Hansen",
     role: "Senior Developer",
     company: "TechCorp",
-    content: "twhisper has transformed how I document my code. The AI formatting for technical content is spot-on, and the terminal integration means I never leave my workflow.",
+    content: "twhisper has transformed how I document my code. The AI tone of voice adaptation for technical content is spot-on, and the terminal integration means I never leave my workflow.",
     rating: 5
   },
   {
     name: "Lars Andersen", 
     role: "Product Manager",
     company: "StartupXYZ",
-    content: "Writing emails and Slack messages is now effortless. The different formatting modes understand context perfectly - from casual team chats to formal client communications.",
+    content: "Writing emails and Slack messages is now effortless. The different tone options understand context perfectly - from casual team chats to formal client communications.",
     rating: 5
   },
   {

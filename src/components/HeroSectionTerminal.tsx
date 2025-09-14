@@ -24,7 +24,7 @@ export const HeroSectionTerminal = () => {
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                AI-powered voice transcription with intelligent formatting. 
+                AI-powered voice transcription with intelligent tone of voice adaptation. 
                 Built for developers who think in code and speak in solutions.
               </p>
             </div>
@@ -57,7 +57,7 @@ export const HeroSectionTerminal = () => {
               </div>
               <div className="flex items-center gap-3 text-terminal-success">
                 <span className="text-terminal-accent">$</span>
-                <span>Context-aware formatting for any workflow</span>
+                <span>Smart tone of voice for any context</span>
               </div>
               <div className="flex items-center gap-3 text-terminal-success">
                 <span className="text-terminal-accent">$</span>
@@ -105,7 +105,7 @@ export const HeroSectionTerminal = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-terminal-muted">TAB</span>
-                      <span className="text-foreground">— Switch formatting mode</span>
+                      <span className="text-foreground">— Switch tone of voice</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-terminal-muted">Shift+S</span>

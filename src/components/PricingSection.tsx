@@ -5,23 +5,26 @@ import { StripePaymentButton } from "./StripePaymentButton";
 
 const plans = [
   {
-    name: "Free",
+    name: "Starter",
     price: "€0",
     period: "/month",
     description: "Perfect for testing and short messages",
     features: [
       { name: "1-minute recordings (batch mode)", included: true },
       { name: "All formatting modes", included: true },
-      { name: "Full AI transcription", included: true },
+      { name: "No login required", included: true },
       { name: "Streaming for long sessions", included: false },
+      { name: "Custom formatting options", included: false },
       { name: "10-minute recordings (batch mode)", included: false },
       { name: "Priority support", included: false },
+      { name: "Managed cloud AI (no setup required)", included: false },
+      { name: "Single sign-on (SSO)", included: false },
     ],
     cta: "Start Free",
     popular: false
   },
   {
-    name: "Premium",
+    name: "Professional",
     price: "€0",
     originalPrice: "€9",
     period: "/month",
@@ -30,12 +33,33 @@ const plans = [
       { name: "Streaming for long sessions", included: true },
       { name: "10-minute recordings (batch mode)", included: true },
       { name: "All formatting modes", included: true },
-      { name: "Full AI transcription", included: true },
+      { name: "Streaming formatting modes", included: true },
       { name: "Priority support", included: true },
-      { name: "Supports ongoing development", included: true },
+      { name: "Custom formatting options", included: false },
+      { name: "Managed cloud AI (no setup required)", included: false },
+      { name: "Single sign-on (SSO)", included: false },
     ],
     cta: "Install to Upgrade",
     popular: true
+  },
+  {
+    name: "Enterprise",
+    price: "Coming Soon",
+    originalPrice: "€20",
+    period: "/month",
+    description: "Advanced cloud-powered transcription and collaboration",
+    features: [
+      { name: "Streaming for long sessions", included: true },
+      { name: "10-minute recordings (batch mode)", included: true },
+      { name: "All formatting modes", included: true },
+      { name: "Streaming formatting modes", included: true },
+      { name: "Custom formatting options", included: true },
+      { name: "Priority support", included: true },
+      { name: "Managed cloud AI (no setup required)", included: true },
+      { name: "Single sign-on (SSO)", included: true },
+    ],
+    cta: "Notify Me",
+    popular: false
   }
 ];
 
@@ -55,7 +79,7 @@ export const PricingSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <Card 
               key={index}
@@ -104,7 +128,7 @@ export const PricingSection = () => {
                 </ul>
 
                 <StripePaymentButton
-                  plan={plan.name.toLowerCase() as 'free' | 'premium'}
+                  plan={plan.name.toLowerCase() as 'starter' | 'professional' | 'enterprise'}
                   className="w-full"
                   variant={plan.popular ? "default" : "outline"}
                   size="lg"

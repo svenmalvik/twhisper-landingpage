@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 interface StripePaymentButtonProps {
-  plan: 'free' | 'premium';
+  plan: 'starter' | 'professional' | 'enterprise';
   className?: string;
   variant?: 'default' | 'outline';
   size?: 'default' | 'sm' | 'lg';
@@ -26,7 +26,7 @@ export const StripePaymentButton: React.FC<StripePaymentButtonProps> = ({
 
   return (
     <Button 
-      className={`${className} ${plan === 'free' ? 'hover:bg-muted/50 hover:text-white transition-colors' : ''}`}
+      className={`${className} ${plan === 'starter' ? 'hover:bg-muted/50 hover:text-white transition-colors' : ''}`}
       variant={variant}
       size={size}
       onClick={handlePayment}

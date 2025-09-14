@@ -74,7 +74,7 @@ export const TermsOfService = () => {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Free Plan</h3>
                   <p className="text-muted-foreground">
-                    Includes 1-minute recordings, all formatting modes, and full AI transcription at no cost. Free because processing uses local whisper.cpp and/or your own Azure OpenAI resource.
+                    Includes 1-minute recordings and all formatting modes. Free because processing uses local whisper.cpp and/or your own Azure OpenAI resource.
                   </p>
                 </div>
                 

@@ -95,7 +95,7 @@ This landing page promotes **twhisper**, a terminal-based voice-to-text transcri
 - ⌨️ Intuitive Keyboard Controls
 
 ### Pricing Structure
-**Free Plan**: 1-minute recordings, all formatting modes, full AI transcription
+**Free Plan**: 1-minute recordings and all formatting modes
 **Premium Plan**: 10-minute recordings, real-time streaming, priority support
 
 ### Technical Details

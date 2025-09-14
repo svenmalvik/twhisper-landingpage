@@ -16,11 +16,11 @@ const faqs = [
   },
   {
     question: "Can I cancel anytime?",
-    answer: "Absolutely. No contracts, cancel your subscription at any time. You'll retain access to premium features until the end of your billing period."
+    answer: "Absolutely. No contracts, cancel your subscription at any time. You'll retain access to professional features until the end of your billing period."
   },
   {
     question: "What tone of voice options are available?",
-    answer: "Twhisper adapts your speech to different tones: default, email, code documentation, message, slack, professional casual. All tone options are available in both free and premium plans."
+    answer: "Twhisper adapts your speech to different tones: default, email, code documentation, message, slack, professional casual. All tone options are available in both starter and professional plans."
   },
   {
     question: "What platforms are supported?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: "How does the streaming mode work?",
-    answer: "Premium streaming mode provides real-time transcription as you speak, perfect for long meetings and extended sessions. It's ideal for capturing live conversations and brainstorming sessions."
+    answer: "Professional streaming mode provides real-time transcription as you speak, perfect for long meetings and extended sessions. It's ideal for capturing live conversations and brainstorming sessions."
   },
   {
     question: "Can I use it offline?",
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: "What's the difference between batch and streaming mode?",
-    answer: "Batch mode processes complete recordings up to 10 minutes (Premium) or 1 minute (Free). Streaming mode provides real-time transcription for longer sessions."
+    answer: "Batch mode processes complete recordings up to 10 minutes (Professional) or 1 minute (Starter). Streaming mode provides real-time transcription for longer sessions."
   }
 ];
 

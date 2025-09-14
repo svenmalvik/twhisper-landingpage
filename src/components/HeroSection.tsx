@@ -90,7 +90,7 @@ export const HeroSection = () => {
             </div>
             
             <div className="absolute -bottom-4 -left-4 bg-card border shadow-soft p-4 rounded-lg">
-              <p className="text-sm font-medium text-accent">€9/month Premium</p>
+              <p className="text-sm font-medium text-accent">€9/month Professional</p>
             </div>
           </div>
         </div>

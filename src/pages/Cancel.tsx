@@ -64,7 +64,7 @@ export const Cancel = () => {
               <ul className="space-y-2 text-sm text-terminal-text/80">
                 <li>• Payment was cancelled before completion</li>
                 <li>• No charges were made to your account</li>
-                <li>• Your free plan remains active</li>
+                <li>• Your starter plan remains active</li>
               </ul>
             </div>
 
@@ -79,7 +79,7 @@ export const Cancel = () => {
             </div>
 
             <div className="bg-terminal-bg/70 p-4 rounded-lg border border-terminal-accent/30">
-              <h4 className="font-semibold text-terminal-text mb-2">Free Plan Features</h4>
+              <h4 className="font-semibold text-terminal-text mb-2">Starter Plan Features</h4>
               <ul className="space-y-1 text-sm text-terminal-text/80">
                 <li>✓ Up to 1 minute per session</li>
                 <li>✓ All formatting modes</li>

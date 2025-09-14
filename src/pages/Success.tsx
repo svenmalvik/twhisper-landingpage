@@ -20,10 +20,10 @@ export const Success = () => {
           <TerminalLogo />
           <div className="text-center">
             <h1 className="text-4xl font-bold text-terminal-text mt-4 mb-2">
-              Welcome to Twhisper Premium! 🚀
+              Welcome to Twhisper Professional! 🚀
             </h1>
             <p className="text-terminal-text/80 text-lg">
-              You now have access to all premium features
+              You now have access to all professional features
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export const Success = () => {
             </div>
             <CardTitle className="text-2xl text-terminal-text">Subscription Activated</CardTitle>
             <CardDescription className="text-terminal-text/70">
-              Your premium features are now available
+              Your professional features are now available
             </CardDescription>
           </CardHeader>
 
@@ -47,7 +47,7 @@ export const Success = () => {
                   {sessionToken}
                 </code>
                 <p className="text-xs text-terminal-text/60 mt-2">
-                  Your CLI session will automatically activate premium features.
+                  Your CLI session will automatically activate professional features.
                 </p>
               </div>
             )}
@@ -58,7 +58,7 @@ export const Success = () => {
                 <li className="flex items-start gap-3">
                   <Terminal className="w-4 h-4 text-terminal-success mt-0.5 flex-shrink-0" />
                   <div>
-                    <span className="text-terminal-text">Premium features are now enabled in your CLI</span>
+                    <span className="text-terminal-text">Professional features are now enabled in your CLI</span>
                     <p className="text-terminal-text/60 text-xs mt-1">
                       Run <code className="bg-terminal-bg/50 px-1 py-0.5 rounded font-mono">twhisper --mode streaming</code> to try real-time transcription
                     </p>

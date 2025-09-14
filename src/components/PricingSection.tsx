@@ -101,7 +101,7 @@ export const PricingSection = () => {
                   <span className="text-5xl font-bold">{plan.price}</span>
                   <span className="text-lg text-muted-foreground">{plan.period}</span>
                 </div>
-                {plan.originalPrice && (
+                {plan.originalPrice && plan.name !== "Enterprise" && (
                   <div className="text-sm text-terminal-success font-semibold mt-2">
                     Free during early access
                   </div>

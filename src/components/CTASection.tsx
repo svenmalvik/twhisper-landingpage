@@ -19,7 +19,7 @@ export const CTASection = () => {
               </h2>
               
               <p className="text-xl text-primary-foreground/90 leading-relaxed">
-                Start with our free tier and experience the future of voice-to-text. 
+                Start with our starter tier and experience the future of voice-to-text. 
                 Join thousands of professionals who have already transformed their productivity.
               </p>
             </div>
@@ -48,7 +48,7 @@ export const CTASection = () => {
 
             <div className="pt-8 border-t border-primary-foreground/20">
               <p className="text-sm text-primary-foreground/70">
-                ✓ No credit card required &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Cancel anytime &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Premium upgrade available
+                ✓ No credit card required &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Cancel anytime &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Professional upgrade available
               </p>
             </div>
           </div>

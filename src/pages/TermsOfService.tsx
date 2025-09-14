@@ -44,7 +44,7 @@ export const TermsOfService = () => {
                 <li>• Converts speech to formatted text using AI technology</li>
                 <li>• Provides multiple formatting modes for different contexts</li>
                 <li>• Offers both local processing (whisper.cpp) and cloud processing options</li>
-                <li>• Includes streaming mode for real-time transcription (Premium)</li>
+                <li>• Includes streaming mode for real-time transcription (Professional)</li>
               </ul>
             </section>
 
@@ -72,14 +72,14 @@ export const TermsOfService = () => {
               <h2 className="text-2xl font-semibold mb-4">5. Subscription and Payment</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Free Plan</h3>
+                  <h3 className="text-lg font-semibold mb-2">Starter Plan</h3>
                   <p className="text-muted-foreground">
                     Includes 1-minute recordings and all formatting modes. Free because processing uses local whisper.cpp and/or your own Azure OpenAI resource.
                   </p>
                 </div>
                 
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Premium Plan</h3>
+                  <h3 className="text-lg font-semibold mb-2">Professional Plan</h3>
                   <p className="text-muted-foreground mb-2">
                     Currently free during early access period. Users will be notified at least 7 days in advance before regular pricing takes effect automatically.
                   </p>

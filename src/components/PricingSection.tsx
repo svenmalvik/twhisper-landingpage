@@ -43,8 +43,8 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: "Coming Soon",
-    originalPrice: "€20",
+    price: "€29",
+    originalPrice: "",
     period: "/month",
     description: "Advanced cloud-powered transcription and collaboration",
     features: [

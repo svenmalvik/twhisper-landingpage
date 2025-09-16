@@ -82,7 +82,7 @@ export const Cancel = () => {
               <h4 className="font-semibold text-terminal-text mb-2">Starter Plan Features</h4>
               <ul className="space-y-1 text-sm text-terminal-text/80">
                 <li>✓ Up to 1 minute per session</li>
-                <li>✓ All formatting modes</li>
+                <li>✓ All communication styles</li>
                 <li>✓ Batch mode transcription</li>
                 <li>✓ Community support</li>
               </ul>

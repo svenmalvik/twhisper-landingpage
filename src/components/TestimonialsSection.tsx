@@ -6,14 +6,14 @@ const testimonials = [
     name: "Ingrid Hansen",
     role: "Senior Developer",
     company: "TechCorp",
-    content: "twhisper has transformed how I document my code. The AI tone of voice adaptation for technical content is spot-on, and the terminal integration means I never leave my workflow.",
+    content: "twhisper has transformed my workflow. The AI communication style adaptation is spot-on, and the terminal integration means I never leave my development environment.",
     rating: 5
   },
   {
     name: "Lars Andersen", 
     role: "Product Manager",
     company: "StartupXYZ",
-    content: "Writing emails and Slack messages is now effortless. The different tone options understand context perfectly - from casual team chats to formal client communications.",
+    content: "Writing emails and Slack messages is now effortless. The different communication styles understand context perfectly - from casual team chats to formal client communications.",
     rating: 5
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     name: "Erik Nordahl",
     role: "Freelance Developer",
     company: "Independent",
-    content: "As someone with RSI, twhisper is a lifesaver. The voice-to-code feature helps me document functions and write comments without straining my hands.",
+    content: "As someone with RSI, twhisper is a lifesaver. The voice transcription helps me create documentation and write communications without straining my hands.",
     rating: 5
   }
 ];

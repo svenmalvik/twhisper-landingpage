@@ -11,7 +11,7 @@ const features = [
   {
     icon: Brain,
     title: "AI-Powered Intelligence", 
-    description: "Smart tone of voice adaptation for emails, code docs, and more",
+    description: "Smart communication style adaptation for slack, emails, and more",
     details: "Understands your intent, not just your words"
   },
   {

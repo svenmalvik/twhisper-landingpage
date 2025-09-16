@@ -11,11 +11,13 @@ const plans = [
     description: "Perfect for testing and short messages",
     features: [
       { name: "1-minute recordings (batch mode)", included: true },
-      { name: "All tone of voice modes", included: true },
+      { name: "All communication styles", included: true },
+      { name: "English language support", included: true },
       { name: "No login required", included: true },
       { name: "Streaming for long sessions", included: false },
       { name: "Custom tone profiles", included: false },
       { name: "10-minute recordings (batch mode)", included: false },
+      { name: "Multi-language support (Danish, Norwegian, Finnish)", included: false },
       { name: "Priority support", included: false },
       { name: "Managed cloud AI (no setup required)", included: false },
       { name: "Single sign-on (SSO)", included: false },
@@ -32,7 +34,8 @@ const plans = [
     features: [
       { name: "Streaming for long sessions", included: true },
       { name: "10-minute recordings (batch mode)", included: true },
-      { name: "All tone of voice modes", included: true },
+      { name: "All communication styles", included: true },
+      { name: "Multi-language support (English, Danish, Norwegian, Finnish)", included: true },
       { name: "Support", included: true },
       { name: "Custom tone profiles", included: false },
       { name: "Managed cloud AI (no setup required)", included: false },
@@ -50,7 +53,8 @@ const plans = [
     features: [
       { name: "Streaming for long sessions", included: true },
       { name: "10-minute recordings (batch mode)", included: true },
-      { name: "All tone of voice modes", included: true },
+      { name: "All communication styles", included: true },
+      { name: "Multi-language support (English, Danish, Norwegian, Finnish)", included: true },
       { name: "Custom tone profiles", included: true },
       { name: "Managed cloud AI (no setup required)", included: true },
       { name: "Single sign-on (SSO)", included: true },
@@ -140,7 +144,7 @@ export const PricingSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground">
-            All plans include local AI processing and intelligent tone of voice adaptation for multiple contexts.
+            All plans include local AI processing and intelligent communication style adaptation for multiple contexts.
           </p>
         </div>
       </div>

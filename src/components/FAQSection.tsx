@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "How accurate is the transcription?",
-    answer: "Twhisper uses local whisper.cpp by default for high-quality transcription, with optional Azure OpenAI Whisper for enhanced accuracy. The AI understands context and adapts tone of voice for superior results."
+    answer: "Twhisper uses local whisper.cpp by default for high-quality transcription, with optional Azure OpenAI Whisper for enhanced accuracy. The AI understands context and adapts communication style for superior results."
   },
   {
     question: "Do I need internet connection?",
@@ -19,8 +19,12 @@ const faqs = [
     answer: "Absolutely. No contracts, cancel your subscription at any time. You'll retain access to professional features until the end of your billing period."
   },
   {
-    question: "What tone of voice options are available?",
-    answer: "Twhisper adapts your speech to different tones: default, email, code documentation, message, slack, professional casual. All tone options are available in both starter and professional plans."
+    question: "What communication styles are available?",
+    answer: "Twhisper adapts your speech to different communication styles: default, slack, email, and professional casual. All communication styles are available in both starter and professional plans."
+  },
+  {
+    question: "What languages are supported?",
+    answer: "The Starter plan supports English transcription. Professional and Enterprise plans include multi-language support for English, Danish, Norwegian, and Finnish, making it perfect for international teams and multilingual content creation."
   },
   {
     question: "What platforms are supported?",

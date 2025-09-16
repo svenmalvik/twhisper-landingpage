@@ -42,7 +42,7 @@ export const TermsOfService = () => {
               </p>
               <ul className="space-y-2 text-muted-foreground ml-6">
                 <li>• Converts speech to formatted text using AI technology</li>
-                <li>• Provides multiple formatting modes for different contexts</li>
+                <li>• Provides multiple communication styles for different contexts</li>
                 <li>• Offers both local processing (whisper.cpp) and cloud processing options</li>
                 <li>• Includes streaming mode for real-time transcription (Professional)</li>
               </ul>
@@ -74,7 +74,7 @@ export const TermsOfService = () => {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Starter Plan</h3>
                   <p className="text-muted-foreground">
-                    Includes 1-minute recordings and all formatting modes. Free because processing uses local whisper.cpp and/or your own Azure OpenAI resource.
+                    Includes 1-minute recordings and all communication styles. Free because processing uses local whisper.cpp and/or your own Azure OpenAI resource.
                   </p>
                 </div>
                 

@@ -70,7 +70,7 @@ export const Success = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-terminal-success mt-0.5 flex-shrink-0" />
-                  <span className="text-terminal-text">Custom formatting templates available</span>
+                  <span className="text-terminal-text">Custom communication styles available</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-terminal-success mt-0.5 flex-shrink-0" />

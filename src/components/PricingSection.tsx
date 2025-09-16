@@ -28,7 +28,7 @@ const plans = [
   {
     name: "Professional",
     price: "€0",
-    originalPrice: "€9",
+    originalPrice: "€19",
     period: "/month",
     description: "For professional content creation and long-form work",
     features: [
@@ -56,7 +56,7 @@ const plans = [
       { name: "All communication styles", included: true },
       { name: "Multi-language support (English, Danish, Norwegian, Finnish)", included: true },
       { name: "Custom tone profiles", included: true },
-      { name: "Managed cloud AI (no setup required)", included: true },
+      { name: "Managed cloud AI or bring your own LLM providers", included: true },
       { name: "Single sign-on (SSO)", included: true },
       { name: "Priority support", included: true },
     ],

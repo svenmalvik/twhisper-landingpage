@@ -38,7 +38,7 @@ export const HeroSectionTerminal = () => {
                 <Button
                   size="xl"
                   className="font-mono group bg-blue-600 hover:bg-blue-700 text-white border-blue-500 transition-colors text-lg px-8 py-4"
-                  onClick={() => window.open('https://github.com/svenmalvik/twhisper/releases/download/v0.3.3/twhisper-0.3.4.dmg', '_blank')}
+                  onClick={() => window.open('https://github.com/svenmalvik/twhisper/releases/download/v0.3.3/twhisper-0.3.3.dmg', '_blank')}
                 >
                   <Apple className="w-6 h-6 group-hover:scale-110 transition-transform" />
                   Download Mac App

@@ -1,124 +1,84 @@
 import { Button } from "@/components/ui/button";
 import { TerminalLogo } from "@/components/TerminalLogo";
-import { TerminalWindow } from "@/components/TerminalWindow";
-import { Circle, Mic, Terminal, Zap } from "lucide-react";
+import { Circle, Terminal, Apple } from "lucide-react";
 
 export const HeroSectionTerminal = () => {
   return (
     <section className="relative bg-gradient-terminal min-h-screen flex items-center">
       <div className="container mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Content */}
-          <div className="space-y-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="space-y-10">
             <TerminalLogo />
-            
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 bg-terminal-success/10 border border-terminal-success/30 text-terminal-success px-4 py-2 rounded-md text-sm font-mono">
-                <Circle className="w-3 h-3 fill-current" />
-                Streaming Mode Ready
+
+            <div className="space-y-6">
+              <div className="flex flex-wrap justify-center gap-3">
+                <div className="inline-flex items-center gap-2 bg-terminal-success/10 border border-terminal-success/30 text-terminal-success px-4 py-2 rounded-md text-sm font-mono">
+                  <Circle className="w-3 h-3 fill-current" />
+                  Streaming Mode Ready
+                </div>
+                <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 text-blue-400 px-4 py-2 rounded-md text-sm font-mono">
+                  <Apple className="w-3 h-3 fill-current" />
+                  Mac App Available
+                </div>
               </div>
-              
-              <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+
+              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 Transform Your Voice Into{" "}
                 <span className="text-terminal-accent font-mono">Perfect Text</span>
               </h1>
-              
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                AI-powered voice transcription with intelligent communication style adaptation. 
-                Built for developers who think in code and speak in solutions.
+
+              <p className="text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                AI-powered voice transcription with intelligent communication style adaptation.
+                Available as both <span className="text-blue-400 font-semibold">Mac app</span> and <span className="text-terminal-accent font-semibold">terminal tool</span>.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="terminal" 
-                size="xl" 
-                className="font-mono group hover:bg-terminal-accent/90 transition-colors"
-                onClick={() => document.getElementById('installation')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                <Terminal className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Get Started
-              </Button>
-              <Button 
-                variant="outline" 
-                size="xl" 
-                className="font-mono hover:bg-white/10 hover:border-white/30 hover:text-white transition-colors"
-                onClick={() => window.open('https://github.com/svenmalvik/homebrew-twhisper/blob/main/README.md', '_blank')}
-              >
-                man twhisper
-              </Button>
+            <div className="space-y-6">
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Button
+                  size="xl"
+                  className="font-mono group bg-blue-600 hover:bg-blue-700 text-white border-blue-500 transition-colors text-lg px-8 py-4"
+                  onClick={() => window.open('#', '_blank')}
+                >
+                  <Apple className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                  Download Mac App
+                </Button>
+                <Button
+                  variant="terminal"
+                  size="xl"
+                  className="font-mono group hover:bg-terminal-accent/90 transition-colors text-lg px-8 py-4"
+                  onClick={() => document.getElementById('installation')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  <Terminal className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                  Terminal Install
+                </Button>
+              </div>
+              <div className="flex justify-center">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="font-mono hover:bg-white/10 hover:border-white/30 hover:text-white transition-colors"
+                  onClick={() => window.open('https://github.com/svenmalvik/homebrew-twhisper/blob/main/README.md', '_blank')}
+                >
+                  man twhisper
+                </Button>
+              </div>
             </div>
 
             {/* Terminal-style feature list */}
-            <div className="space-y-2 pt-8 font-mono text-sm">
-              <div className="flex items-center gap-3 text-terminal-success">
-                <span className="text-terminal-accent">$</span>
+            <div className="space-y-3 pt-8 font-mono text-lg max-w-2xl mx-auto">
+              <div className="flex items-center gap-4 text-terminal-success">
+                <span className="text-terminal-accent text-xl">$</span>
                 <span>Real-time transcription with progressive results</span>
               </div>
-              <div className="flex items-center gap-3 text-terminal-success">
-                <span className="text-terminal-accent">$</span>
+              <div className="flex items-center gap-4 text-terminal-success">
+                <span className="text-terminal-accent text-xl">$</span>
                 <span>Smart communication styles for any context</span>
               </div>
-              <div className="flex items-center gap-3 text-terminal-success">
-                <span className="text-terminal-accent">$</span>
+              <div className="flex items-center gap-4 text-terminal-success">
+                <span className="text-terminal-accent text-xl">$</span>
                 <span>Terminal-native with seamless clipboard integration</span>
               </div>
-            </div>
-          </div>
-
-          {/* Right Column - Terminal Demo */}
-          <div className="relative">
-            <TerminalWindow className="transform hover:scale-105 transition-transform duration-300">
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Circle className="w-2 h-2 text-terminal-success fill-current" />
-                  <span className="text-terminal-success">Streaming Mode Ready</span>
-                  <span className="text-terminal-muted">— Press SPACE for real-time transcription</span>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <Mic className="w-4 h-4 text-terminal-muted" />
-                  <span className="text-terminal-muted">Streaming mode: Real-time transcription with progressive results</span>
-                </div>
-
-                <div className="grid grid-cols-3 gap-4 text-xs py-4 border-y border-border">
-                  <div>
-                    <span className="text-terminal-accent">Mode:</span>
-                    <span className="text-foreground ml-2 font-semibold">Professional casual</span>
-                  </div>
-                  <div>
-                    <span className="text-terminal-muted">Processing:</span>
-                    <span className="text-foreground ml-2">streaming</span>
-                  </div>
-                  <div>
-                    <span className="text-terminal-muted">Whisper:</span>
-                    <span className="text-foreground ml-2">Local: small.en</span>
-                  </div>
-                </div>
-
-                <div className="space-y-2 pt-4">
-                  <p className="text-terminal-muted text-xs">Keyboard shortcuts:</p>
-                  <div className="grid grid-cols-1 gap-1 text-xs">
-                    <div className="flex justify-between">
-                      <span className="text-terminal-muted">SPACE</span>
-                      <span className="text-foreground">— Start/stop recording</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-terminal-muted">TAB</span>
-                      <span className="text-foreground">— Switch communication style</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-terminal-muted">Shift+S</span>
-                      <span className="text-foreground">— Streaming processing mode</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </TerminalWindow>
-            
-            {/* Floating terminal prompt */}
-            <div className="absolute -top-4 -right-4 bg-card border border-terminal-accent/30 text-terminal-accent p-3 rounded-md shadow-terminal animate-pulse font-mono text-sm">
-              <span className="text-terminal-success">●</span> Live transcription active
             </div>
           </div>
         </div>

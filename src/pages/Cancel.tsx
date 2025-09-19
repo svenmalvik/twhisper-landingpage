@@ -28,22 +28,22 @@ export const Cancel = () => {
           <TerminalLogo />
           <div className="text-center">
             <h1 className="text-4xl font-bold text-terminal-text mt-4 mb-2">
-              Payment Cancelled
+              Good News!
             </h1>
             <p className="text-terminal-text/80 text-lg">
-              No worries, you can try again anytime
+              Twhisper is now completely free - no payment needed
             </p>
           </div>
         </div>
 
-        <Card className="bg-terminal-bg/50 border-red-500/30 text-terminal-text shadow-lg">
+        <Card className="bg-terminal-bg/50 border-terminal-success/30 text-terminal-text shadow-lg">
           <CardHeader className="text-center">
-            <div className="mx-auto mb-4 w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center">
-              <XCircle className="w-8 h-8 text-red-500" />
+            <div className="mx-auto mb-4 w-16 h-16 bg-terminal-success/20 rounded-full flex items-center justify-center">
+              <Terminal className="w-8 h-8 text-terminal-success" />
             </div>
-            <CardTitle className="text-2xl text-terminal-text">Payment Not Completed</CardTitle>
+            <CardTitle className="text-2xl text-terminal-text">All Features Included Free</CardTitle>
             <CardDescription className="text-terminal-text/70">
-              Your subscription was not activated
+              Just install and start using twhisper
             </CardDescription>
           </CardHeader>
 
@@ -59,45 +59,29 @@ export const Cancel = () => {
               </div>
             )}
 
-            <div className="space-y-4">
-              <h3 className="font-semibold text-terminal-text">What happened?</h3>
-              <ul className="space-y-2 text-sm text-terminal-text/80">
-                <li>• Payment was cancelled before completion</li>
-                <li>• No charges were made to your account</li>
-                <li>• Your starter plan remains active</li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="font-semibold text-terminal-text">Common reasons for cancellation:</h3>
-              <ul className="space-y-2 text-sm text-terminal-text/80">
-                <li>• Browser back button was pressed</li>
-                <li>• Payment window was closed</li>
-                <li>• Network connection issue</li>
-                <li>• Changed mind about upgrading</li>
-              </ul>
-            </div>
-
             <div className="bg-terminal-bg/70 p-4 rounded-lg border border-terminal-accent/30">
-              <h4 className="font-semibold text-terminal-text mb-2">Starter Plan Features</h4>
+              <h4 className="font-semibold text-terminal-text mb-2">Free Features Included</h4>
               <ul className="space-y-1 text-sm text-terminal-text/80">
-                <li>✓ Up to 1 minute per session</li>
+                <li>✓ Unlimited recordings</li>
                 <li>✓ All communication styles</li>
-                <li>✓ Batch mode transcription</li>
+                <li>✓ Multi-language support</li>
+                <li>✓ Streaming mode</li>
+                <li>✓ 10-minute recordings (batch mode)</li>
+                <li>✓ Bring your own Azure OpenAI</li>
                 <li>✓ Community support</li>
               </ul>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
-              <Button 
+              <Button
                 className="flex-1 bg-terminal-success hover:bg-terminal-success/80 text-terminal-bg"
-                onClick={handleRetryPayment}
+                onClick={() => window.location.href = '/#installation'}
               >
-                <RefreshCw className="w-4 h-4 mr-2" />
-                Try Payment Again
+                <Terminal className="w-4 h-4 mr-2" />
+                Install Twhisper
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="flex-1 border-terminal-accent/30 text-terminal-text hover:bg-terminal-accent/10 hover:text-terminal-text"
                 onClick={() => window.location.href = '/'}
               >
@@ -117,19 +101,6 @@ export const Cancel = () => {
               </Button>
             )}
 
-            <div className="pt-4 border-t border-terminal-accent/20">
-              <p className="text-xs text-center text-terminal-text/60 mb-3">
-                Already have a subscription? Manage it here:
-              </p>
-              <Button 
-                variant="ghost" 
-                className="w-full text-terminal-accent hover:bg-terminal-accent/10 hover:text-terminal-accent"
-                onClick={() => window.open('https://billing.stripe.com/p/login/test_6oUeVd6yb9SKbCG8n54Ja00', '_blank')}
-              >
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Customer Portal Login
-              </Button>
-            </div>
 
             <div className="text-xs text-center text-terminal-text/50 pt-4 border-t border-terminal-accent/20">
               Need help? Contact us at support@twhisper.com

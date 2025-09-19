@@ -95,8 +95,7 @@ This landing page promotes **twhisper**, a terminal-based voice-to-text transcri
 - ⌨️ Intuitive Keyboard Controls
 
 ### Pricing Structure
-**Starter Plan**: 1-minute recordings and all formatting modes
-**Professional Plan**: 10-minute recordings, real-time streaming, priority support
+**Free Forever Plan**: All features included - unlimited recordings, real-time streaming, multi-language support, all communication styles
 
 ### Technical Details
 - **Primary Platform**: macOS (Homebrew installation)

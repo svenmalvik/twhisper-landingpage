@@ -16,15 +16,15 @@ const faqs = [
   },
   {
     question: "Can I cancel anytime?",
-    answer: "Absolutely. No contracts, cancel your subscription at any time. You'll retain access to professional features until the end of your billing period."
+    answer: "You don't need to cancel anything - twhisper is completely free to use with all features included forever."
   },
   {
     question: "What communication styles are available?",
-    answer: "Twhisper adapts your speech to different communication styles: default, slack, email, and professional casual. All communication styles are available in both starter and professional plans."
+    answer: "Twhisper adapts your speech to different communication styles: default, slack, email, and professional casual. All communication styles are included for free."
   },
   {
     question: "What languages are supported?",
-    answer: "The Starter plan supports English transcription. Professional and Enterprise plans include multi-language support for English, Danish, Norwegian, and Finnish, making it perfect for international teams and multilingual content creation."
+    answer: "Twhisper supports multi-language transcription for English, Danish, Norwegian, and Finnish, making it perfect for international teams and multilingual content creation."
   },
   {
     question: "What platforms are supported?",
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "How does the streaming mode work?",
-    answer: "Professional streaming mode provides real-time transcription as you speak, perfect for long meetings and extended sessions. It's ideal for capturing live conversations and brainstorming sessions."
+    answer: "Streaming mode provides real-time transcription as you speak, perfect for long meetings and extended sessions. It's ideal for capturing live conversations and brainstorming sessions."
   },
   {
     question: "Can I use it offline?",
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: "What's the difference between batch and streaming mode?",
-    answer: "Batch mode processes complete recordings up to 10 minutes (Professional) or 1 minute (Starter). Streaming mode provides real-time transcription for longer sessions."
+    answer: "Batch mode processes complete recordings up to 10 minutes. Streaming mode provides real-time transcription for longer sessions."
   }
 ];
 

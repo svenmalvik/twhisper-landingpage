@@ -44,7 +44,9 @@ export const TermsOfService = () => {
                 <li>• Converts speech to formatted text using AI technology</li>
                 <li>• Provides multiple communication styles for different contexts</li>
                 <li>• Offers both local processing (whisper.cpp) and cloud processing options</li>
-                <li>• Includes streaming mode for real-time transcription (Professional)</li>
+                <li>• Includes streaming mode for real-time transcription</li>
+                <li>• Supports multi-language transcription</li>
+                <li>• Provides unlimited recording duration</li>
               </ul>
             </section>
 
@@ -69,26 +71,19 @@ export const TermsOfService = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4">5. Subscription and Payment</h2>
+              <h2 className="text-2xl font-semibold mb-4">5. Free Service</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Starter Plan</h3>
+                  <h3 className="text-lg font-semibold mb-2">Free Forever Plan</h3>
                   <p className="text-muted-foreground">
-                    Includes 1-minute recordings and all communication styles. Free because processing uses local whisper.cpp and/or your own Azure OpenAI resource.
+                    Twhisper is completely free to use with all features included. This includes unlimited recordings, all communication styles, multi-language support, streaming mode, and more. No subscriptions, no hidden costs.
                   </p>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Professional Plan</h3>
-                  <p className="text-muted-foreground mb-2">
-                    Currently free during early access period. Users will be notified at least 7 days in advance before regular pricing takes effect automatically.
+                  <p className="text-muted-foreground">
+                    The service is free because it uses your own Azure OpenAI resource or local whisper.cpp processing. You are responsible for any costs associated with your own Azure OpenAI usage.
                   </p>
-                  <ul className="space-y-1 text-muted-foreground ml-6">
-                    <li>• Subscriptions are billed monthly</li>
-                    <li>• You can cancel anytime through the application</li>
-                    <li>• Refunds are handled on a case-by-case basis</li>
-                    <li>• Price changes will be communicated at least 7 days in advance</li>
-                  </ul>
                 </div>
               </div>
             </section>

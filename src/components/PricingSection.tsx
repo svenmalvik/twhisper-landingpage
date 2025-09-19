@@ -5,56 +5,34 @@ import { StripePaymentButton } from "./StripePaymentButton";
 
 const plans = [
   {
-    name: "Starter",
+    name: "Free Forever",
     price: "€0",
-    period: "/month",
-    description: "Perfect for testing and short messages",
+    period: "",
+    description: "All features included - no limits, no catch",
     features: [
-      { name: "1-minute recordings (batch mode)", included: true },
-      { name: "All communication styles", included: true },
-      { name: "English language support", included: true },
-      { name: "No login required", included: true },
-      { name: "Streaming for long sessions", included: false },
-      { name: "Custom tone profiles", included: false },
-      { name: "10-minute recordings (batch mode)", included: false },
-      { name: "Multi-language support (Danish, Norwegian, Finnish)", included: false },
-      { name: "Priority support", included: false },
-      { name: "Managed cloud AI (no setup required)", included: false },
-      { name: "Single sign-on (SSO)", included: false },
-    ],
-    cta: "Start Free",
-    popular: false
-  },
-  {
-    name: "Professional",
-    price: "€0",
-    originalPrice: "€19",
-    period: "/month",
-    description: "For professional content creation and long-form work",
-    features: [
-      { name: "Streaming for long sessions", included: true },
-      { name: "10-minute recordings (batch mode)", included: true },
+      { name: "Unlimited recordings", included: true },
       { name: "All communication styles", included: true },
       { name: "Multi-language support (English, Danish, Norwegian, Finnish)", included: true },
-      { name: "Support", included: true },
+      { name: "Streaming for long sessions", included: true },
+      { name: "10-minute recordings (batch mode)", included: true },
+      { name: "No login required", included: true },
+      { name: "Bring your own Azure OpenAI", included: true },
+      { name: "Community support", included: true },
       { name: "Custom tone profiles", included: false },
       { name: "Managed cloud AI (no setup required)", included: false },
       { name: "Single sign-on (SSO)", included: false },
     ],
-    cta: "Install to Upgrade",
+    cta: "Get Started",
     popular: true
   },
   {
     name: "Enterprise",
-    price: "€29",
+    price: "Custom",
     originalPrice: "",
-    period: "/month",
+    period: "",
     description: "Advanced cloud-powered transcription and collaboration",
     features: [
-      { name: "Streaming for long sessions", included: true },
-      { name: "10-minute recordings (batch mode)", included: true },
-      { name: "All communication styles", included: true },
-      { name: "Multi-language support (English, Danish, Norwegian, Finnish)", included: true },
+      { name: "More languages", included: true },
       { name: "Custom tone profiles", included: true },
       { name: "Managed cloud AI or bring your own LLM provider", included: true },
       { name: "Single sign-on (SSO)", included: true },
@@ -77,13 +55,13 @@ export const PricingSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Start free, upgrade when you need more power. No contracts, cancel anytime.
+            Start completely free with all features, or choose Enterprise for managed cloud AI.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
-            <Card 
+            <Card
               key={index}
               className={`relative bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300 ${
                 plan.popular ? 'ring-2 ring-primary scale-105' : ''
@@ -92,24 +70,16 @@ export const PricingSection = () => {
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-primary text-primary-foreground">
                   <Star className="w-4 h-4 mr-1" />
-                  Most Popular
+                  Free Forever
                 </Badge>
               )}
               
               <CardHeader className="text-center pb-8">
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <div className="flex items-baseline justify-center gap-1 mt-4">
-                  {plan.originalPrice && (
-                    <span className="text-2xl text-muted-foreground line-through mr-2">{plan.originalPrice}</span>
-                  )}
                   <span className="text-5xl font-bold">{plan.price}</span>
-                  <span className="text-lg text-muted-foreground">{plan.period}</span>
+                  {plan.period && <span className="text-lg text-muted-foreground">{plan.period}</span>}
                 </div>
-                {plan.originalPrice && plan.name !== "Enterprise" && (
-                  <div className="text-sm text-terminal-success font-semibold mt-2">
-                    Free during early access
-                  </div>
-                )}
                 <CardDescription className="text-base mt-2">{plan.description}</CardDescription>
               </CardHeader>
 
@@ -130,7 +100,7 @@ export const PricingSection = () => {
                 </ul>
 
                 <StripePaymentButton
-                  plan={plan.name.toLowerCase() as 'starter' | 'professional' | 'enterprise'}
+                  plan={plan.name.toLowerCase() === 'free forever' ? 'starter' : plan.name.toLowerCase() as 'starter' | 'professional' | 'enterprise'}
                   className="w-full"
                   variant={plan.popular ? "default" : "outline"}
                   size="lg"
